@@ -1,0 +1,93 @@
+/*  <title>Marcos Vinicius - DoWhile 2021</title>
+    
+        <!--title usada para alteração de titulo-->
+        <!--Style-uma tag usada provavelmente para deixar tudo mais requintado-->
+        <!--h1=>é o seletor significa que ele é a referencia de todos h1 que tiver no meu html,e toda regra que eu aplicar no escopo vai ser aplicada para todos os outros h1's -->
+        <style>
+      /*Cascating Stylesheet(significa que os elementos que entram por ultimo são os que tem mais força ) Stylesheet(folha com varios estilos em cascata) */
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid; /* display(maneira de vizualização dos meus elementos*/
+  place-items: center; /* place-items(significa o lugar dos itens,aonde desejo coloca-los)*/
+}
+
+main {
+  background: url(images/Mobile.png);
+  width: 375px;
+  height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey);
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+
+  position: relative;
+}
+.avatar span {
+  position: absolute;
+  top: -15px;
+  z-index: 1;
+}
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem; /*Essa regra aplicada dentro das chaves se chama de propriedade e valor(font-size->propriedade "1.5rem"; valor )*/
+
+  margin-top: 1.5rem;
+}
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin-top: 2rem;
+}
+
+ul {
+  margin: 4rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
